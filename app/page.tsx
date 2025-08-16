@@ -5,13 +5,13 @@ import Image from "next/image"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+  <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
                 <Heart className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -20,19 +20,29 @@ export default function HomePage() {
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-6">
-              <a href="tel:+15551234567" className="flex items-center space-x-2 text-blue-600 hover:text-blue-700">
+              <a href="tel:+15551234567" className="flex items-center space-x-2 text-green-600 hover:text-green-700">
                 <Phone className="w-4 h-4" />
                 <span className="font-medium">(555) 123-4567</span>
               </a>
-              <Button className="bg-orange-500 hover:bg-orange-600">Schedule Appointment</Button>
+              <Button className="bg-green-500 hover:bg-green-600">Schedule Appointment</Button>
             </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-16 px-4">
+  <section className="pt-6 pb-16 px-4">
         <div className="max-w-6xl mx-auto text-center">
+          <div className="flex justify-center items-center mb-8 px-2 md:px-8">
+            <Image
+              src="/jungle-banner.png"
+              alt="Jungle banner"
+              width={1200}
+              height={320}
+              className="max-w-full h-auto rounded-lg"
+              priority
+            />
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Gentle, Fun Dental Care for Your Little Ones
           </h2>
@@ -40,15 +50,15 @@ export default function HomePage() {
             We create a welcoming, fear-free environment where children feel comfortable and excited about dental
             health. Our experienced pediatric team makes every visit a positive experience.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700">
               <Calendar className="w-5 h-5 mr-2" />
               Book Your Child's Visit
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-orange-500 text-orange-600 hover:bg-orange-50 bg-transparent"
+              className="border-green-500 text-green-600 hover:bg-green-50 bg-transparent"
             >
               <Phone className="w-5 h-5 mr-2" />
               Call (555) 123-4567
@@ -68,8 +78,8 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-green-600" />
                 </div>
                 <h4 className="text-xl font-semibold mb-3">Preventive Care</h4>
                 <p className="text-gray-600">
@@ -93,8 +103,8 @@ export default function HomePage() {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-orange-600" />
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-green-600" />
                 </div>
                 <h4 className="text-xl font-semibold mb-3">Restorative Care</h4>
                 <p className="text-gray-600">
@@ -105,8 +115,8 @@ export default function HomePage() {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Star className="w-8 h-8 text-purple-600" />
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Star className="w-8 h-8 text-green-600" />
                 </div>
                 <h4 className="text-xl font-semibold mb-3">Sedation Options</h4>
                 <p className="text-gray-600">
@@ -117,8 +127,8 @@ export default function HomePage() {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Phone className="w-8 h-8 text-red-600" />
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Phone className="w-8 h-8 text-green-600" />
                 </div>
                 <h4 className="text-xl font-semibold mb-3">Emergency Care</h4>
                 <p className="text-gray-600">
@@ -129,8 +139,8 @@ export default function HomePage() {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-teal-600" />
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-green-600" />
                 </div>
                 <h4 className="text-xl font-semibold mb-3">Orthodontic Evaluations</h4>
                 <p className="text-gray-600">
@@ -143,7 +153,7 @@ export default function HomePage() {
       </section>
 
       {/* Meet the Team Section */}
-      <section className="py-16 px-4 bg-blue-50">
+  <section className="py-16 px-4 bg-green-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Caring Team</h3>
@@ -162,7 +172,7 @@ export default function HomePage() {
                 />
               </div>
               <h4 className="text-xl font-semibold mb-2">Dr. Sarah Johnson</h4>
-              <p className="text-blue-600 font-medium mb-3">Pediatric Dentist</p>
+              <p className="text-green-600 font-medium mb-3">Pediatric Dentist</p>
               <p className="text-gray-600 text-sm">
                 Dr. Johnson has over 10 years of experience in pediatric dentistry. She believes in making every visit
                 fun and educational, helping children develop positive relationships with dental care.
@@ -180,7 +190,7 @@ export default function HomePage() {
                 />
               </div>
               <h4 className="text-xl font-semibold mb-2">Dr. Michael Chen</h4>
-              <p className="text-blue-600 font-medium mb-3">Pediatric Dentist</p>
+              <p className="text-green-600 font-medium mb-3">Pediatric Dentist</p>
               <p className="text-gray-600 text-sm">
                 Dr. Chen specializes in treating children with special needs and dental anxiety. His patient, gentle
                 approach helps even the most nervous children feel at ease.
@@ -198,7 +208,7 @@ export default function HomePage() {
                 />
               </div>
               <h4 className="text-xl font-semibold mb-2">Lisa Martinez</h4>
-              <p className="text-blue-600 font-medium mb-3">Dental Hygienist</p>
+              <p className="text-green-600 font-medium mb-3">Dental Hygienist</p>
               <p className="text-gray-600 text-sm">
                 Lisa loves working with kids and has a special talent for making cleanings fun. She's passionate about
                 teaching children proper brushing and flossing techniques.
@@ -253,9 +263,9 @@ export default function HomePage() {
                   <li>• Debit Cards</li>
                   <li>• CareCredit Financing</li>
                 </ul>
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <h5 className="font-semibold text-blue-900 mb-2">No Insurance?</h5>
-                  <p className="text-sm text-blue-800">
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <h5 className="font-semibold text-green-900 mb-2">No Insurance?</h5>
+                  <p className="text-sm text-green-800">
                     We offer competitive self-pay rates and flexible payment plans. Contact us to discuss options that
                     work for your family.
                   </p>
@@ -346,18 +356,18 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-blue-600">
+      <section className="py-16 px-4 bg-green-600">
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-3xl font-bold text-white mb-4">Ready to Schedule Your Child's Visit?</h3>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-green-100 mb-8">
             Join hundreds of happy families who trust us with their children's dental care.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+            <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
               <Calendar className="w-5 h-5 mr-2" />
               Schedule Online
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-blue-700 bg-transparent">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-green-700 bg-transparent">
               <Phone className="w-5 h-5 mr-2" />
               Call (555) 123-4567
             </Button>
@@ -369,7 +379,7 @@ export default function HomePage() {
       <footer className="bg-gray-900 text-white py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
-            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+            <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
               <Heart className="w-5 h-5 text-white" />
             </div>
             <h4 className="text-xl font-bold">Little Smiles Pediatric Dentistry</h4>
@@ -377,7 +387,7 @@ export default function HomePage() {
           <p className="text-gray-400 mb-4">Creating healthy smiles for life</p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm">
             <p>123 Children's Way, Suite 200, Hometown, ST 12345</p>
-            <a href="tel:+15551234567" className="text-blue-400 hover:text-blue-300">
+            <a href="tel:+15551234567" className="text-green-400 hover:text-green-300">
               (555) 123-4567
             </a>
           </div>
