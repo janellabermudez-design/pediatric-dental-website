@@ -3,61 +3,30 @@ import Image from "next/image"
 export default function TeamSection() {
   return (
     <section className="py-16 px-4 bg-green-50">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Caring Team</h3>
-          <p className="text-lg text-gray-600">Experienced professionals dedicated to your child's dental health</p>
+          <h3 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Pediatric Dentist</h3>
+          <p className="text-lg text-gray-600">Caring for your child's smile with expertise and compassion</p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="text-center">
-            <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
-              <Image
-                src="/pediatric-dentist-headshot.png"
-                alt="Dr. Sarah Johnson"
-                width={128}
-                height={128}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h4 className="text-xl font-semibold mb-2">Dr. Sarah Johnson</h4>
-            <p className="text-green-600 font-medium mb-3">Pediatric Dentist</p>
-            <p className="text-gray-600 text-sm">
-              Dr. Johnson has over 10 years of experience in pediatric dentistry. She believes in making every visit
-              fun and educational, helping children develop positive relationships with dental care.
-            </p>
-          </div>
-          <div className="text-center">
-            <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
-              <Image
-                src="/pediatric-dentist-headshot.png"
-                alt="Dr. Michael Chen"
-                width={128}
-                height={128}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h4 className="text-xl font-semibold mb-2">Dr. Michael Chen</h4>
-            <p className="text-green-600 font-medium mb-3">Pediatric Dentist</p>
-            <p className="text-gray-600 text-sm">
-              Dr. Chen specializes in treating children with special needs and dental anxiety. His patient, gentle
-              approach helps even the most nervous children feel at ease.
-            </p>
-          </div>
+        <div className="flex flex-col items-center">
           <div className="text-center">
             <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
               <Image
                 src="/dental-hygienist-headshot.png"
-                alt="Lisa Martinez"
+                alt="Dr. Yani"
                 width={128}
                 height={128}
                 className="w-full h-full object-cover"
               />
             </div>
-            <h4 className="text-xl font-semibold mb-2">Lisa Martinez</h4>
-            <p className="text-green-600 font-medium mb-3">Dental Hygienist</p>
-            <p className="text-gray-600 text-sm">
-              Lisa loves working with kids and has a special talent for making cleanings fun. She's passionate about
-              teaching children proper brushing and flossing techniques.
+            <h4 className="text-xl font-semibold mb-2">Dr. Yani</h4>
+            <p className="text-green-600 font-medium mb-3">Pediatric Dentist</p>
+            <p className="text-gray-600 text-sm text-left max-w-xl mx-auto">
+              Yani is a dedicated dental professional with a strong passion for pediatric dentistry. She earned her Doctor of Dental Surgery degree from a top-tier dental school, where she had the opportunity to provide care in rural and underserved communities—an experience that deepened her commitment to patient-focused care.
+              <br /><br />
+              After dental school, Yani completed an Advanced Education in General Dentistry (AEGD) residency, which solidified her passion for pediatric dentistry and inspired her to pursue advanced specialty training. She recently completed her pediatric dental residency, where she received focused training in preventive care, behavior guidance, and treating children with special health care needs.
+              <br /><br />
+              Yani is committed to helping children develop positive, comfortable experiences at the dentist and values building lasting relationships with families to support lifelong oral health. She is also fluent in Spanish, which allows her to provide inclusive care to a diverse patient population. Outside of dentistry, Yani enjoys staying active through running and hiking, as well as trying out new recipes and exploring different cuisines.
             </p>
           </div>
         </div>
